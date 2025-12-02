@@ -9,26 +9,30 @@
         <VerticalStackLayout Spacing="20" Padding="20" HorizontalOptions="Center">
 
             <Image
-                Source="shop_list(1).jpg"
+                Source="shop_list.jpg"
                 WidthRequest="200"
                 HeightRequest="200"
                 Aspect="AspectFit"
                 SemanticProperties.Description="Poza utilizatorului" />
 
             <Label
-                Text="Salut! Eu sunt Pojar Cosmin și aceasta este pagina mea personalizată pentru laboratorul de .NET MAUI."
+                Text="Hello World!"
                 FontSize="20"
                 HorizontalTextAlignment="Center" />
 
             <Label
-                Text="Îmi place fotbalul, am jucat în Liga 4 și îmi place fotbalul."
+                Text="Welcome to &#10; NET Multi-Platform App UI"
                 FontSize="18"
                 HorizontalTextAlignment="Center" />
 
-            <Label
-                Text='Poza de mai sus este relevantă pentru mine și face parte din cerințele laboratorului.'
-                FontSize="18"
-                HorizontalTextAlignment="Center" />
+            <Button 
+              x:Name="CounterBtn"
+              Text="Click me"
+              Clicked="OnCounterClicked"
+              FontSize="18"
+              HorizontalOptions="Center"
+              WidthRequest="200"
+              HeightRequest="48" />
 
         </VerticalStackLayout>
     </ScrollView>
